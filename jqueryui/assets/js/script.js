@@ -45,6 +45,11 @@ $(function(){
 		connectWith: '#sortable'
 	});
 
-
+	/* ---- ACCORDION ----*/
+	/* ------------------*/
+	$('#accordion').accordion({
+		collapsible: true,
+		heightStyle: 'content'
+	});
 
 });
