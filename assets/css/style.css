@@ -1,0 +1,31 @@
+h1, p{
+	text-align: center;
+}
+
+
+#box{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	text-align: center;
+	margin: 50px auto;
+	padding: 20px 20px;
+	border-radius: 15px 50px;
+}
+
+.thing{
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	text-align: center;
+	margin: 50px auto;
+	padding: 20px 20px;
+}
+
+.button{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+}
