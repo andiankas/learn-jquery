@@ -36,7 +36,14 @@ $(function(){
 
 	/* ---- SORTABLE ----*/
 	/* ------------------*/
-	$('#sortable').sortable();
+	$('#sortable').sortable({
+		connectWith: '#sortableToo',
+		placeholder: 'placeholderBox'
+	});
+
+	$('#sortableToo').sortable({
+		connectWith: '#sortable'
+	});
 
 
 
