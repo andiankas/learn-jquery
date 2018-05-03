@@ -42,9 +42,60 @@ $(function(){
 
 	// // 04 CHAINING
 	// $('.notification-bar').delay(2000).slideDown().delay(3000).fadeOut();
+	
 	// //---------------------------------------
 
-	// 05 HIDING, SHOWING & FADING CONTENT
-	
+	// // 05 HIDING, SHOWING & FADING CONTENT
+	// $('h1').hide();	
+	// $('.hidden').show();
+	// $('.hidden').fadeIn(1000);
+	// $('#box1').click(function(){
+	// 	$(this).fadeOut(1000, 0.75, function() {
+			
+	// 	});
+	// });
+
+	// // --------------------------------------
+
+	// // 06 Animate Method
+	$('#left').click(function() {
+		
+		$('.box').animate({
+			left: '-=40px',
+			fontSize: '+=2px'
+		},	function() {
+			/* stuff to do after animation is complete */
+		});
+	});
+
+	$('#up').click(function() {
+		
+		$('.box').animate({
+			top: '-=40px',
+			opacity: '+=0.1'
+		},	function() {
+			/* stuff to do after animation is complete */
+		});
+	});
+
+	$('#right').click(function() {
+		
+		$('.box').animate({
+			left: '+=40px',
+			fontSize: '-=2px'
+		},	function() {
+			/* stuff to do after animation is complete */
+		});
+	});
+
+	$('#down').click(function() {
+		
+		$('.box').animate({
+			top: '+=40px',
+			opacity: '-=0.1'
+		},	function() {
+			/* stuff to do after animation is complete */
+		});
+	});
 
 });
